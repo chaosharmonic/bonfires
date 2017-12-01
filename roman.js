@@ -4,11 +4,13 @@ function convertToRoman(num) {
 
   var numeral = "";
   var i = 1;
-  // Iterate over string until it contains num number of "I"'s
-  while (i <= num) {
-    numeral += "I";
-    i++;
-  }
+  numeral = "I".repeat(num);
+
+  // ES5 method: Iterate over string until it contains num number of "I"'s
+  // while (i <= num) {
+  //   numeral += "I";
+  //   i++;
+  // }
 
 // Filter that string down using String.replace and a global regex (as .replace defaults to only replacing the first instance otherwise). Groups of 4-10 I's will be replaced with their correct symbols, in order from largest to smallest group. After all extraneous I's have been replaced, do the same with X's, then C's.
 
