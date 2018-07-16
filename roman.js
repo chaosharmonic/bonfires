@@ -7,10 +7,8 @@ function convertToRoman(num) {
 
   // ES5 method: Declare an empty string and concatenate to it until it contains num number of "I"s
   // var numeral = "";
-  // var i = 1;
-  // while (i <= num) {
+  // for (var i = 1; i <= num; i++) {
   //   numeral += "I";
-  //   i++;
   // }
 
   // Filter that string down using String.replace and a global regex
